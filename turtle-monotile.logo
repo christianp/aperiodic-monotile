@@ -1,0 +1,31 @@
+; a LOGO script to draw the outline of the 'turtle' aperiodic monotile
+
+make "a 100
+make "b :a * tan 60
+rt 90
+fd :a
+rt 60
+fd :a
+lt 90
+fd :b
+rt 60
+fd :b
+fd :b
+rt 60
+fd :b
+rt 90
+fd :a
+lt 60
+fd :a
+rt 90
+fd :b
+lt 60
+fd :b
+rt 90
+fd :a
+rt 60
+fd :a
+lt 90
+fd :b
+rt 60
+fd :b

@@ -1,4 +1,4 @@
-; a LOGO script to draw the outline of the aperiodic monotile
+; a LOGO script to draw the outline of the 'hat' aperiodic monotile
 
 make "a 100
 make "b :a * tan 60

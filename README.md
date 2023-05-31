@@ -4,7 +4,7 @@ This repository contains code and vector image files to produce [the aperiodic m
 
 There's a family of related shapes, each made of 14 edges (though two of the edges are parallel and adjacent so look like a single long edge).
 Each edge is one of two lengths, 𝑎 or 𝑏. The angles in the shape don't change.
-There is [an interactive tool](interactive.html) to draw the tiles with any choice of the parameters and download in SVG or PNG format.
+There is [an interactive tool](https://somethingorotherwhatever.com/aperiodic-monotile/interactive.html) to draw the tiles with any choice of the parameters and download in SVG or PNG format.
 
 There are three interesting monotiles, which each tile the plane aperiodically.
 

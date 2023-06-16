@@ -24,9 +24,26 @@ Each file produces a single copy of the tile. Several copies of the tile fit tog
 
 The files are:
 
-* [hat-monotile.svg](hat-monotile.svg) / [turtle-monotile.svg](turtle-monotile.svg) / [spectre-monotile.svg](spectre-monotile.svg) - A vector graphics file for use in programs such as Inkscape or Adobe Illustrator.
-* [hat-monotile-kites.svg](hat-monotile-kites.svg) / [turtle-monotile-kites.svg](turtle-monotile-kites.svg) - A vector graphics file showing the construction of each tile from kites.
-* [hat-monotile.scad](hat-monotile.scad) / [turtle-monotile.scad](turtle-monotile.scad) - Code to produce the tile in [OpenSCAD](https://openscad.org/), for 3D printing.
-* [hat-monotile.stl](hat-monotile.stl) / [turtle-monotile.stl](turtle-monotile.stl) - An STL file produced using the OpenSCAD code, which can be sent directly to a 3D printer, or manipulated in other 3D software.
-* [hat-monotile.logo](hat-monotile.logo) / [turtle-monotile.logo](turtle-monotile.logo) - A LOGO script to draw the outline of the title with Turtle graphics.
+## Hat tile
 
+* [hat-monotile.svg](hat-monotile.svg) - A vector graphics file for use in programs such as Inkscape or Adobe Illustrator.
+* [hat-monotile-kites.svg](hat-monotile-kites.svg) - A vector graphics file showing the construction of each tile from kites.
+* [hat-monotile.scad](hat-monotile.scad) - Code to produce the tile in [OpenSCAD](https://openscad.org/), for 3D printing.
+* [hat-monotile.stl](hat-monotile.stl) - An STL file produced using the OpenSCAD code, which can be sent directly to a 3D printer, or manipulated in other 3D software.
+* [hat-monotile.logo](hat-monotile.logo) - A LOGO script to draw the outline of the title with Turtle graphics.
+
+## Turtle tile
+* [turtle-monotile.svg](turtle-monotile.svg) - A vector graphics file for use in programs such as Inkscape or Adobe Illustrator.
+* [turtle-monotile-kites.svg](turtle-monotile-kites.svg) - A vector graphics file showing the construction of each tile from kites.
+* [turtle-monotile.scad](turtle-monotile.scad) - Code to produce the tile in [OpenSCAD](https://openscad.org/), for 3D printing.
+* [turtle-monotile.stl](turtle-monotile.stl) - An STL file produced using the OpenSCAD code, which can be sent directly to a 3D printer, or manipulated in other 3D software.
+* [turtle-monotile.logo](turtle-monotile.logo) - A LOGO script to draw the outline of the title with Turtle graphics.
+
+## Spectre tile
+* [spectre-monotile.svg](spectre-monotile.svg) - A vector graphics file for use in programs such as Inkscape or Adobe Illustrator.
+* [spectre-monotile.scad](spectre-monotile.scad) - Code to produce the tile in [OpenSCAD](https://openscad.org/), for 3D printing.
+* [spectre-monotile.stl](spectre-monotile.stl) - An STL file produced using the OpenSCAD code, which can be sent directly to a 3D printer, or manipulated in other 3D software.
+* [spectre-monotile-outline.scad](spectre-monotile-outline.scad) - OpenSCAD to produce an outline of the tile.
+* [spectre-monotile-outline.stl](spectre-monotile-outline.stl) - An STL file of the outline.
+* [spectre-monotile-this-way-up.scad](spectre-monotile-this-way-up.scad) - OpenSCAD to produce the tile with raised text "This way up" on one side.
+* [spectre-monotile-this-way-up.stl](spectre-monotile-this-way-up.stl) - An STL file of the above.

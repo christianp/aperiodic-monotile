@@ -49,3 +49,4 @@ The files are:
 * [spectre-monotile-outline.stl](spectre-monotile-outline.stl) - An STL file of the outline.
 * [spectre-monotile-this-way-up.scad](spectre-monotile-this-way-up.scad) - OpenSCAD to produce the tile with raised text "This way up" on one side.
 * [spectre-monotile-this-way-up.stl](spectre-monotile-this-way-up.stl) - An STL file of the above.
+* [spectre-monotile-250ct-34x18.svg](spectre-monotile-250ct-34x18.svg) - A vector graphics file for laser cutting 250 tiles on a 34"x18" surface. *Created by Mahrud Sayrafi*.

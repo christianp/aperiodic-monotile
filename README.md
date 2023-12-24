@@ -24,7 +24,7 @@ Each file produces a single copy of the tile. Several copies of the tile fit tog
 
 * The 'hat' monotile can tile the plane together with its reflection.
 * The 'turtle' can tile the plane with or _without_ its reflection.
-* The 'spectre' monotile is a 'turtle' with curved edges, so that it can the tile _only_ without its reflection.
+* The 'spectre' monotile is a 'turtle' with curved edges, so that it can tile the plane _only_ without its reflection.
 
 The files are:
 

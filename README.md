@@ -23,8 +23,8 @@ And a 'spectre':
 Each file produces a single copy of the tile. Several copies of the tile fit together to tile the plane:
 
 * The 'hat' monotile can tile the plane together with its reflection.
-* The 'turtle' can tile the plane with or _without_ its reflection.
-* The 'spectre' monotile is a 'turtle' with curved edges, so that it can tile the plane _only_ without its reflection.
+* The 'turtle' monotile can also tile the plane with its reflection. (It and the hat are two of a family of polygons that tile the plane in the same way.)
+* The 'spectre' monotile, with curved edges, can tile the plane _only_ without its reflection. (The spectre with straight edges is related to both the hat and turtle, but it can tile the plane periodically _and_ aperiodically. An aperiodic tiling can be forced by forbidding reflections—which is effectively what curving the edges accomplishes.)
 
 The files are:
 

@@ -1,0 +1,11 @@
+{
+    "parameterSets": {
+        "straight": {
+            "a": "1",
+            "b": "1",
+            "curve_amount": "0",
+            "num_steps": "20"
+        }
+    },
+    "fileFormatVersion": "1"
+}

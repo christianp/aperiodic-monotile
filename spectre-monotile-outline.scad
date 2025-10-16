@@ -1,8 +1,13 @@
-// Produce Tile(a,b)
-a = 1;
-b = 1;
+// Size, in mm
+diameter = 500;
+// Thickness of the outline, in mm 
+thickness = 5; 
 
-curve_amount = 0.1;
+
+a = diameter / 4.767;
+b = a;
+
+curve_amount = 0.1*a;
 
 c = cos(60);
 s = sin(60);
@@ -34,7 +39,7 @@ points = [
     p
 ];
     
-function curve_between(a, b, steps=10, curve=curve_amount) = 
+function curve_between(a, b, steps=100, curve=curve_amount) = 
     let(
         d = b-a,
         n = [d[1],-d[0]]/norm(d)
@@ -45,12 +50,12 @@ function curve_between(a, b, steps=10, curve=curve_amount) =
 curve_points = [ for(i=0;i<len(points);i=i+1) each curve_between(points[i], points[(i+1) % len(points)]) ];
 
  module tile(height) {
-     linear_extrude(height) {
-         scale(10) difference() {
+ //    linear_extrude(height) {
+         difference() {
              polygon(curve_points);
-             offset(-0.1) polygon(curve_points);
+             offset(-thickness) polygon(curve_points);
          }
-     }
+ //    }
  }
  
 tile(10);

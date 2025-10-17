@@ -1,0 +1,22 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "100",
+            "L": "90",
+            "angle": "60",
+            "in": "10",
+            "w": "5"
+        },
+        "New set 2": {
+            "$fn": "100",
+            "L": "90",
+            "angle": "30",
+            "height": "20",
+            "in": "10",
+            "teeth_clearance": "0.30000000000000004",
+            "teeth_count": "2",
+            "w": "5"
+        }
+    }
+}

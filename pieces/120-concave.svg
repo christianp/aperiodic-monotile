@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29.550657mm"
+   height="18.850494mm"
+   viewBox="0 0 29.550657 18.850494"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="120-concave.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.50522817"
+     inkscape:cx="-161.31325"
+     inkscape:cy="269.1853"
+     inkscape:window-width="1866"
+     inkscape:window-height="1011"
+     inkscape:window-x="54"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-147.63752,-77.522915)">
+    <path
+       id="path79"
+       style="fill:#00ccff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-dasharray:none"
+       d="m 170.35121,77.681005 c -1.2814,3.159787 -2.9277,6.56045 -5.0864,10.299436 -5.56607,0 -10.21541,0.458523 -14.24639,1.226079 l -1.3e-4,3.221487 -3.24847,-1.325721 1e-4,3.435773 3.24869,-0.651589 -1.6e-4,2.322063 c 1.54466,-0.342848 3.12745,-0.628174 4.70498,-0.821505 1.09101,-0.1347 2.21771,-0.237967 3.29313,-0.314405 1.62074,-0.113797 3.27062,-0.16584 4.8786,-0.195553 1.78478,-0.02704 3.54899,-0.02514 5.33178,-0.02011 1.8742,-3.187435 3.72028,-6.396143 5.34416,-9.719997 0.8953,-1.850972 1.6877,-3.754597 2.43986,-5.67145 l -2.62208,-0.702601 c 0.0201,0.04339 0.0296,0.09086 0.0281,0.138615 l -0.21278,3.305969 c -0.0124,0.193172 -0.19807,0.326999 -0.38526,0.27768 l -3.31907,-0.886592 c -0.21172,-0.0562 -0.29847,-0.30943 -0.1657,-0.483658 l 2.12121,-2.795138 c 0.0172,-0.02196 0.0371,-0.04138 0.0594,-0.05792 z"
+       sodipodi:nodetypes="ccccccccccccccccscccccc"
+       inkscape:label="120-concave" />
+  </g>
+</svg>

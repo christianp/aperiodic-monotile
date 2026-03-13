@@ -1,0 +1,11 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "30",
+            "diameter": "500",
+            "hole_diameter": "3",
+            "thickness": "7"
+        }
+    }
+}

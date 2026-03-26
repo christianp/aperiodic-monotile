@@ -3,7 +3,7 @@ $fn = 30;
 // Size, in mm
 diameter = 500;
 // Thickness of the outline, in mm 
-thickness = 5; 
+thickness = 10; 
 
 // Diameter of dowel holes, in mm
 hole_diameter = 3;
@@ -79,8 +79,8 @@ module tile() {
         [ for(i=0; i<len(points); i=i+1) each curve_between(i) ];
 
     difference() {
-        polygon(curve_points);
-        offset(-thickness) polygon(curve_points);
+        offset(thickness/2) polygon(curve_points);
+        offset(-thickness/2) polygon(curve_points);
     }
 }
 
@@ -90,7 +90,7 @@ module divider(i) {
     n = cross([d[0],d[1],0], [0,0,1]);
     an = atan2(d[1],d[0]);
     
-    translate(p+n/norm(n)*thickness/2)
+    translate(p)
     rotate(an+90) {
         rotate(lock_angle)
         #square([thickness,0.1]);
@@ -107,7 +107,7 @@ module hole(i) {
     dd = normal(t1) + normal(t2);
     d = unit(dd);
     z = cross(t1,t2);
-    f = z==0 ? thickness/2 : hole_diameter + (thickness-hole_diameter)/(z>0 ? 2 : 10);
+    f = z==0 ? 0 : (thickness-hole_diameter)/(z>0 ? 8 : -4);
 
     c = p + f*d;
 
@@ -124,13 +124,17 @@ module hole_tile() {
     }
 }
 
-module label(i) {
-    d = direction_at(i,0.5);
+module text_at(vertex,along,txt) {
+    d = direction_at(vertex, along);
     an = atan2(d[1],d[0]);
-    translate(curve_point(i, 0.5)) 
-    rotate(an) 
-    translate([0,-thickness*0.75]) 
-    text(str(i), size=thickness/2, font="Atkinson Hyperlegible Next:style=Bold");
+    translate(curve_point(vertex, along)) 
+    rotate(an)
+    text(txt, size=thickness/2, font="Atkinson Hyperlegible Next:style=Bold", valign="center");
+}
+
+
+module label(i) {
+    text_at(i, 0.5, str(i));
 }
 
 module pieces(layer) {

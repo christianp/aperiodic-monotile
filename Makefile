@@ -1,2 +1,3 @@
 upload:
-	rsync -avz . clpland:domains/somethingorotherwhatever.com/html/secret/laser-cutter
+	python3 make-index.py
+	rsync -avz . root@clpland:/var/www/somethingorotherwhatever.com/secret/laser-cutter

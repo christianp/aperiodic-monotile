@@ -3,13 +3,13 @@ $fn = 30;
 // Size, in mm
 diameter = 500;
 // Thickness of the outline, in mm 
-thickness = 10; 
+thickness = 10;
 
 // Diameter of dowel holes, in mm
 hole_diameter = 3;
 
 // Angle of the arrow lock between pieces
-lock_angle = 30;
+lock_angle = 45;
 
 
 a = diameter / 4.767;
@@ -78,26 +78,53 @@ module tile() {
     curve_points = 
         [ for(i=0; i<len(points); i=i+1) each curve_between(i) ];
 
-    difference() {
+    intersection() {
         offset(thickness/2) polygon(curve_points);
-        offset(-thickness/2) polygon(curve_points);
+        union() {
+            difference() {
+                offset(thickness/2) polygon(curve_points);
+                offset(-thickness/2) polygon(curve_points);
+            }
+            for(i=[0:len(points)-1]) {
+                reinforcer(i);
+            }
+        }
     }
 }
 
 module divider(i) {
-    p = curve_point(i,0.1);
-    d = direction_at(i,0.1);
+    x = 0.12;
+    p = curve_point(i,x);
+    d = direction_at(i,x);
     n = cross([d[0],d[1],0], [0,0,1]);
     an = atan2(d[1],d[0]);
     
+    t = 0.3;
     translate(p)
     rotate(an+90) {
         rotate(lock_angle)
-        #square([thickness,0.1]);
+        #translate([-t/2,-t/2]) square([thickness,t]);
         rotate(-180-lock_angle)
-        #square([thickness,0.1]);
+        #translate([-t/2,-t/2]) square([thickness,t]);
     }
 }
+
+module reinforcer(i) {
+    p = points[i];
+    pi = i==0 ? len(points)-1 : i-1;
+    t1 = direction_at(i,0);
+    t2 = direction_at(pi,1);
+    dd = normal(t1) + normal(t2);
+    d = unit(dd);
+    z = cross(t1,t2);
+    f = abs(z) < 0.01 ? 0 : (thickness-hole_diameter)/(z>0 ? 4 : -4);
+
+    c = p + f*d;
+    
+    s = abs(z)<0.01 ? 1 : z>0 ? 1.5 : 1;
+
+    translate(c) circle(d=s*thickness);
+}    
 
 module hole(i) {
     p = points[i];
@@ -107,7 +134,7 @@ module hole(i) {
     dd = normal(t1) + normal(t2);
     d = unit(dd);
     z = cross(t1,t2);
-    f = z==0 ? 0 : (thickness-hole_diameter)/(z>0 ? 8 : -4);
+    f = abs(z)<0.01 ? 0 : (thickness-hole_diameter)/(z>0 ? 4 : -4);
 
     c = p + f*d;
 
@@ -118,7 +145,7 @@ module hole_tile() {
     difference() {
         tile();
 
-        #for(i=[0:len(points)-1]) {
+        for(i=[0:len(points)-1]) {
             hole(i);
         }
     }

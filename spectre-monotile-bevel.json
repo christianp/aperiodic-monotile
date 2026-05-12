@@ -1,0 +1,29 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "New set 1": {
+            "$fn": "30",
+            "diameter": "500",
+            "hole_diameter": "3",
+            "thickness": "7"
+        },
+        "New set 2": {
+            "$fn": "30",
+            "diameter": "500",
+            "hole_diameter": "3",
+            "lock_angle": "45",
+            "thickness": "10"
+        },
+        "New set 3": {
+            "$fn": "30",
+            "corner": "7",
+            "cutter_height": "8",
+            "diameter": "500",
+            "hole_diameter": "3",
+            "lock_angle": "45",
+            "sidewall": "5",
+            "thickness": "10",
+            "wall": "2"
+        }
+    }
+}
